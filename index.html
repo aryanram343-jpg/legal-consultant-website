@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consultant - Expert Legal Advisory Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3c72;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .about {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .contact {
+            background: #1e3c72;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-item strong {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #0f1f3d;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">⚖️ Legal Consultant</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Expert Legal Advisory Services</h1>
+        <p>Providing comprehensive legal solutions with integrity and excellence</p>
+        <a href="#contact" class="cta-button">Schedule Consultation</a>
+    </section>
+
+    <section class="container" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Corporate Law</h3>
+                <p>Comprehensive legal support for businesses including contract drafting, compliance, mergers & acquisitions, and corporate governance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Civil Litigation</h3>
+                <p>Expert representation in civil disputes, property matters, and commercial litigation with a track record of successful outcomes.</p>
+            </div>
+            <div class="service-card">
+                <h3>Contract Review</h3>
+                <p>Thorough analysis and drafting of contracts to protect your interests and ensure legal compliance in all business dealings.</p>
+            </div>
+            <div class="service-card">
+                <h3>Legal Compliance</h3>
+                <p>Guidance on regulatory compliance, risk management, and ensuring your business operations meet all legal requirements.</p>
+            </div>
+            <div class="service-card">
+                <h3>Intellectual Property</h3>
+                <p>Protection of trademarks, copyrights, patents, and trade secrets to safeguard your intellectual assets.</p>
+            </div>
+            <div class="service-card">
+                <h3>Employment Law</h3>
+                <p>Advisory services on employment contracts, workplace policies, disputes, and labor law compliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="section-title">About Us</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                With years of experience in providing top-tier legal consultation services, we are committed to delivering 
+                personalized legal solutions tailored to your unique needs. Our expertise spans multiple practice areas, 
+                ensuring comprehensive support for individuals and businesses alike.
+            </p>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Cases Handled</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title" style="color: white;">Get In Touch</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to discuss your legal needs? Contact us today for a consultation.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <span>contact@legalconsultant.com</span>
+            </div>
+            <div class="contact-item">
+                <strong>📞 Phone</strong>
+                <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+                <strong>📍 Address</strong>
+                <span>123 Legal Street, Suite 100<br>City, State 12345</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Legal Consultant. All rights reserved. | Professional Legal Services</p>
+    </footer>
+</body>
+</html>
